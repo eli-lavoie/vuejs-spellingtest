@@ -1,5 +1,7 @@
 # spelling-test
 
+Deployed to firebase [here](https://vuejs-spelling.web.app/)
+
 ## Project setup
 ```
 npm install
