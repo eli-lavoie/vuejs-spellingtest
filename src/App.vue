@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <spelling-test />
+    <footer class="footer">
       <div class="content has-text-centered github-link">
         <p>
           GitHub repository
@@ -12,6 +13,7 @@
           </a>
         </p>
       </div>
+    </footer>
   </div>
 </template>
 
@@ -24,15 +26,18 @@ export default {
 </script>
 
 <style>
+
+body{
+  min-height: 100vh;
+  background-color: #fafafa;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  padding-top: 30px;
 }
-.github-link{
-  padding-top: 5em;
-}
+
 </style>
