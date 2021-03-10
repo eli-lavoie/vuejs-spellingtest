@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1 class="is-1 title">{{ content }}</h1>
+    <h2 class="is-3 subtitle" v-if="!completed && started">Word {{ current + 1 }} / {{ words.length }}</h2>
     <b-button @click="speak" v-if="!completed && !started">Start</b-button>
     <b-button @click="speak" v-if="started && !completed">Repeat Word</b-button>
     <b-input
